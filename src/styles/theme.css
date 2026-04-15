@@ -1,0 +1,391 @@
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --font-size: 16px;
+  
+  /* ===================================
+     BASE COLORS - Light Theme
+     =================================== */
+  
+  /* Backgrounds */
+  --background: #ffffff;
+  --background-elevated: #f8fafc; /* Slate 50 - for elevated surfaces */
+  --background-subtle: #f1f5f9; /* Slate 100 - for subtle backgrounds */
+  
+  --foreground: #0B0E13; /* Slate 900 */
+  --foreground-muted: #64748b; /* Slate 500 */
+  --foreground-subtle: #94a3b8; /* Slate 400 */
+  
+  /* Cards & Surfaces */
+  --card: #ffffff;
+  --card-foreground: #0B0E13;
+  --card-elevated: #f8fafc;
+  --card-hover: #f1f5f9;
+  
+  /* Popovers & Overlays */
+  --popover: #ffffff;
+  --popover-foreground: #0B0E13;
+  
+  /* Brand Primary (Green) */
+  --primary: #1d8751;
+  --primary-hover: #166d42;
+  --primary-foreground: #ffffff;
+  --primary-light: #d1fae5; /* Emerald 100 */
+  --primary-subtle: #ecfdf5; /* Emerald 50 */
+  
+  /* Secondary */
+  --secondary: #f1f5f9; /* Slate 100 */
+  --secondary-foreground: #0B0E13;
+  --secondary-hover: #e2e8f0;
+  
+  /* Muted */
+  --muted: #f8fafc; /* Slate 50 */
+  --muted-foreground: #64748b; /* Slate 500 */
+  
+  /* Accent */
+  --accent: #f1f5f9; /* Slate 100 */
+  --accent-foreground: #0B0E13;
+  --accent-hover: #e2e8f0;
+  
+  /* Semantic Colors - Success */
+  --success: #10b981; /* Emerald 500 */
+  --success-hover: #059669; /* Emerald 600 */
+  --success-foreground: #ffffff;
+  --success-light: #d1fae5; /* Emerald 100 */
+  --success-subtle: #ecfdf5; /* Emerald 50 */
+  
+  /* Semantic Colors - Warning */
+  --warning: #f59e0b; /* Amber 500 */
+  --warning-hover: #d97706; /* Amber 600 */
+  --warning-foreground: #78350f; /* Amber 900 */
+  --warning-light: #fde68a; /* Amber 200 */
+  --warning-subtle: #fef3c7; /* Amber 100 */
+  --warning-bg: #fffbeb; /* Amber 50 */
+  
+  /* Semantic Colors - Destructive/Error */
+  --destructive: #ef4444; /* Red 500 */
+  --destructive-hover: #dc2626; /* Red 600 */
+  --destructive-foreground: #ffffff;
+  --destructive-light: #fecaca; /* Red 200 */
+  --destructive-subtle: #fee2e2; /* Red 100 */
+  --destructive-bg: #fef2f2; /* Red 50 */
+  
+  /* Semantic Colors - Info */
+  --info: #3b82f6; /* Blue 500 */
+  --info-hover: #2563eb; /* Blue 600 */
+  --info-foreground: #ffffff;
+  --info-light: #bfdbfe; /* Blue 200 */
+  --info-subtle: #dbeafe; /* Blue 100 */
+  --info-bg: #eff6ff; /* Blue 50 */
+  
+  /* Status Colors */
+  --status-active: #10b981; /* Emerald 500 */
+  --status-pending: #f59e0b; /* Amber 500 */
+  --status-inactive: #6b7280; /* Gray 500 */
+  --status-error: #ef4444; /* Red 500 */
+  
+  /* Borders & Inputs */
+  --border: #e2e8f0; /* Slate 200 */
+  --border-hover: #cbd5e1; /* Slate 300 */
+  --border-strong: #94a3b8; /* Slate 400 */
+  --input: #e2e8f0;
+  --input-background: #f8fafc;
+  --input-hover: #cbd5e1;
+  --switch-background: #cbd5e1; /* Slate 300 */
+  
+  /* Dark Surface (for hero sections, feature cards, etc.) */
+  --surface-dark: #0B0E13; /* Slate 900 */
+  --surface-dark-elevated: #11151D; /* Slate 800 */
+  --surface-dark-foreground: #f8fafc; /* Slate 50 */
+  --surface-dark-muted: #64748b; /* Slate 500 */
+  
+  /* Chart Colors */
+  --chart-1: #1d8751; /* Primary Green */
+  --chart-2: #3b82f6; /* Blue */
+  --chart-3: #f59e0b; /* Amber */
+  --chart-4: #ef4444; /* Red */
+  --chart-5: #8b5cf6; /* Violet */
+  --chart-6: #ec4899; /* Pink */
+  
+  /* Ring/Focus */
+  --ring: #1d8751;
+  --ring-offset: #ffffff;
+  
+  /* Font Weights */
+  --font-weight-medium: 500;
+  --font-weight-normal: 400;
+  
+  /* Radius */
+  --radius: 0.5rem;
+}
+
+.dark {
+  /* ===================================
+     BASE COLORS - Dark Theme
+     =================================== */
+  
+  /* Backgrounds */
+  --background: #0B0E13; /* Slate 950 */
+  --background-elevated: #0B0E13; /* Slate 900 - for elevated surfaces */
+  --background-subtle: #0B0E13; /* Slate 800 - for subtle backgrounds */
+  
+  --foreground: #f8fafc; /* Slate 50 */
+  --foreground-muted: #94a3b8; /* Slate 400 */
+  --foreground-subtle: #64748b; /* Slate 500 */
+  
+  /* Cards & Surfaces */
+  --card: #0B0E13; /* Slate 900 */
+  --card-foreground: #f8fafc;
+  --card-elevated: #11151D; /* Slate 800 */
+  --card-hover: #334155; /* Slate 700 */
+  
+  /* Popovers & Overlays */
+  --popover: #0B0E13;
+  --popover-foreground: #f8fafc;
+  
+  /* Brand Primary (Green) - brighter for dark mode */
+  --primary: #17602C; /* Emerald 500 - lighter green for better visibility */
+  --primary-hover: #16a34a; /* Emerald 600 */
+  --primary-foreground: #ffffff;
+  --primary-light: #064e3b; /* Emerald 950 */
+  --primary-subtle: #022c22; /* Emerald 950 darker */
+  
+  /* Secondary */
+  --secondary: #11151D; /* Slate 800 */
+  --secondary-foreground: #f8fafc;
+  --secondary-hover: #334155; /* Slate 700 */
+  
+  /* Muted */
+  --muted: #0B0E13; /* Slate 900 */
+  --muted-foreground: #94a3b8; /* Slate 400 */
+  
+  /* Accent */
+  --accent: #11151D;
+  --accent-foreground: #f8fafc;
+  --accent-hover: #334155;
+  
+  /* Semantic Colors - Success */
+  --success: #17602C; /* Emerald 500 */
+  --success-hover: #16a34a; /* Emerald 600 */
+  --success-foreground: #ffffff;
+  --success-light: #064e3b; /* Emerald 950 */
+  --success-subtle: #022c22; /* Emerald 950 darker */
+  
+  /* Semantic Colors - Warning */
+  --warning: #fbbf24; /* Amber 400 - brighter for dark mode */
+  --warning-hover: #f59e0b; /* Amber 500 */
+  --warning-foreground: #451a03; /* Amber 950 */
+  --warning-light: #78350f; /* Amber 900 */
+  --warning-subtle: #451a03; /* Amber 950 */
+  --warning-bg: #1c0a00; /* Very dark amber */
+  
+  /* Semantic Colors - Destructive/Error */
+  --destructive: #f87171; /* Red 400 - brighter for dark mode */
+  --destructive-hover: #ef4444; /* Red 500 */
+  --destructive-foreground: #f8fafc;
+  --destructive-light: #7f1d1d; /* Red 900 */
+  --destructive-subtle: #450a0a; /* Red 950 */
+  --destructive-bg: #1a0000; /* Very dark red */
+  
+  /* Semantic Colors - Info */
+  --info: #60a5fa; /* Blue 400 - brighter for dark mode */
+  --info-hover: #3b82f6; /* Blue 500 */
+  --info-foreground: #ffffff;
+  --info-light: #1e3a8a; /* Blue 900 */
+  --info-subtle: #172554; /* Blue 950 */
+  --info-bg: #0a1628; /* Very dark blue */
+  
+  /* Status Colors */
+  --status-active: #17602C; /* Emerald 500 */
+  --status-pending: #fbbf24; /* Amber 400 */
+  --status-inactive: #9ca3af; /* Gray 400 */
+  --status-error: #f87171; /* Red 400 */
+  
+  /* Borders & Inputs */
+  --border: #11151D; /* Slate 800 */
+  --border-hover: #334155; /* Slate 700 */
+  --border-strong: #475569; /* Slate 600 */
+  --input: #11151D;
+  --input-background: #0B0E13;
+  --input-hover: #334155;
+  --switch-background: #334155; /* Slate 700 */
+  
+  /* Dark Surface (becomes lighter in dark mode for contrast) */
+  --surface-dark: #11151D; /* Slate 800 - lighter than background for contrast */
+  --surface-dark-elevated: #334155; /* Slate 700 */
+  --surface-dark-foreground: #f8fafc; /* Slate 50 */
+  --surface-dark-muted: #94a3b8; /* Slate 400 */
+  
+  /* Chart Colors - adjusted for dark mode */
+  --chart-1: #17602C; /* Emerald 500 */
+  --chart-2: #60a5fa; /* Blue 400 */
+  --chart-3: #fbbf24; /* Amber 400 */
+  --chart-4: #f87171; /* Red 400 */
+  --chart-5: #a78bfa; /* Violet 400 */
+  --chart-6: #f472b6; /* Pink 400 */
+  
+  /* Ring/Focus */
+  --ring: #17602C;
+  --ring-offset: #020617;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-background-elevated: var(--background-elevated);
+  --color-background-subtle: var(--background-subtle);
+  
+  --color-foreground: var(--foreground);
+  --color-foreground-muted: var(--foreground-muted);
+  --color-foreground-subtle: var(--foreground-subtle);
+  
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-card-elevated: var(--card-elevated);
+  --color-card-hover: var(--card-hover);
+  
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  
+  --color-primary: var(--primary);
+  --color-primary-hover: var(--primary-hover);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary-light: var(--primary-light);
+  --color-primary-subtle: var(--primary-subtle);
+  
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary-hover: var(--secondary-hover);
+  
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent-hover: var(--accent-hover);
+  
+  --color-success: var(--success);
+  --color-success-hover: var(--success-hover);
+  --color-success-foreground: var(--success-foreground);
+  --color-success-light: var(--success-light);
+  --color-success-subtle: var(--success-subtle);
+  
+  --color-warning: var(--warning);
+  --color-warning-hover: var(--warning-hover);
+  --color-warning-foreground: var(--warning-foreground);
+  --color-warning-light: var(--warning-light);
+  --color-warning-subtle: var(--warning-subtle);
+  --color-warning-bg: var(--warning-bg);
+  
+  --color-destructive: var(--destructive);
+  --color-destructive-hover: var(--destructive-hover);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-destructive-light: var(--destructive-light);
+  --color-destructive-subtle: var(--destructive-subtle);
+  --color-destructive-bg: var(--destructive-bg);
+  
+  --color-info: var(--info);
+  --color-info-hover: var(--info-hover);
+  --color-info-foreground: var(--info-foreground);
+  --color-info-light: var(--info-light);
+  --color-info-subtle: var(--info-subtle);
+  --color-info-bg: var(--info-bg);
+  
+  --color-status-active: var(--status-active);
+  --color-status-pending: var(--status-pending);
+  --color-status-inactive: var(--status-inactive);
+  --color-status-error: var(--status-error);
+  
+  --color-border: var(--border);
+  --color-border-hover: var(--border-hover);
+  --color-border-strong: var(--border-strong);
+  --color-input: var(--input);
+  --color-input-background: var(--input-background);
+  --color-input-hover: var(--input-hover);
+  --color-switch-background: var(--switch-background);
+  
+  --color-surface-dark: var(--surface-dark);
+  --color-surface-dark-elevated: var(--surface-dark-elevated);
+  --color-surface-dark-foreground: var(--surface-dark-foreground);
+  --color-surface-dark-muted: var(--surface-dark-muted);
+  
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-chart-6: var(--chart-6);
+  
+  --color-ring: var(--ring);
+  --color-ring-offset: var(--ring-offset);
+  
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  
+  /* Font Families */
+  --font-sans: 'Inter', sans-serif;
+  --font-heading: 'Mulish', sans-serif;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-sans);
+  }
+
+  html {
+    font-size: var(--font-size);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    letter-spacing: -0.02em;
+  }
+
+  h1 {
+    font-size: var(--text-2xl);
+    font-weight: var(--font-weight-medium);
+    line-height: 1.5;
+  }
+
+  h2 {
+    font-size: var(--text-xl);
+    font-weight: var(--font-weight-medium);
+    line-height: 1.5;
+  }
+
+  h3 {
+    font-size: var(--text-lg);
+    font-weight: var(--font-weight-medium);
+    line-height: 1.5;
+  }
+
+  h4 {
+    font-size: var(--text-base);
+    font-weight: var(--font-weight-medium);
+    line-height: 1.5;
+  }
+
+  label {
+    font-size: var(--text-base);
+    font-weight: var(--font-weight-medium);
+    line-height: 1.5;
+  }
+
+  button {
+    font-size: var(--text-base);
+    font-weight: var(--font-weight-medium);
+    line-height: 1.5;
+  }
+
+  input {
+    font-size: var(--text-base);
+    font-weight: var(--font-weight-normal);
+    line-height: 1.5;
+  }
+}
